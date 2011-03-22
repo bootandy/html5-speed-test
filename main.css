@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: #000;
+	font-family: Helvetica Neue, Verdana, sans-serif;
+	font-size: 20px;
+}
+
+button {
+		font-size: 20px;
+}
+canvas, section {
+	display: block;
+}
+
+#welcomeDiv {
+	z-index:-1;
+	font-size: 16px;
+	color: #000000;
+	position: absolute;
+	top:50px;
+	right:50px;
+	left:50px;
+}
+
+#main {
+	position: absolute;
+	border-style:solid;
+	border-width:2px;
+}
+.controls {
+	position: absolute;
+	right: 20px;
+	text-align:right;
+}

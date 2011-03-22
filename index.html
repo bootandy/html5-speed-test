@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <title>circles</title>
+	    <meta charset="utf-8">
+		<link rel="stylesheet" href="main.css" />
+	</head>
+
+	<body >
+		<canvas id="main" width="600" height="600">
+			<p>Sorry, your browser doesn't support the canvas element</p>
+		</canvas>
+		
+
+		<div class='controls'>
+			<p x='controls' id='fps_av'>FPS</p>
+			<p c='controls' id='fps_cur'>FPS</p>
+			<p c='controls' >Max Possible:100</p>
+			<p id='dt'></p>
+			<p id='notes'></p>
+			<p>&nbsp;</p>
+			
+			<p>Controls:</p>
+			<p>Quantity: <input type="text" id="quantity" value="300" /> </p>
+			<p>
+				<br/>
+				To Draw: <br/>
+				<label>  <input type="radio" name='draw' id="drawImage" value="image" checked="checked" /> Image </label><br/>
+				<label>  <input type="radio" name='draw' id="drawLine" value="line" > Line</label><br/>
+				<label>  <input type="radio" name='draw' id="drawCircle" value="circle" > Circle</label><br/>
+				<label>  <input type="radio" name='draw' id="drawText" value="text" > Text</label><br/>
+				<br/>	
+			</p>
+			<p>
+				Effect per sprite:<br/>
+				<label> <input type="checkbox" id ="scale" value="scale"> Scale 2 X </label><br/>
+				<label> <input type="checkbox" id ="transparent" value="scale"> Transparent 0.5 </label><br/>
+				<label> <input type="checkbox" id ="rotate" value="scale"> Rotate PI/2 </label><br/>
+				<br/>
+			</p>
+			
+			<p>&nbsp;</p>
+			<p>&nbsp;<button onclick='run=false;' >Update</button> &nbsp;</p>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</html>
